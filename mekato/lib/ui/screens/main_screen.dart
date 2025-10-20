@@ -31,10 +31,7 @@ class _MainScreenState extends State<MainScreen> {
           IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
         ],
       ),
-      body: Padding(
-        padding: EdgeInsets.only(top: 14, bottom: 14, left: 20, right: 20), 
-        child: Dashboard()
-      ),
+      body: Dashboard(),
       bottomNavigationBar: MekatoNavbar(
         currentIndex: _selectedIndex,
         onTap: _onNavbarTap,

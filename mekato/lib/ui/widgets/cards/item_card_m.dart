@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mekato/ui/core/mekato_styles.dart';
 
 class ItemCardM extends StatelessWidget {
   final String imagePath;
@@ -14,20 +15,37 @@ class ItemCardM extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double _width = 100;
+    final double _height = 100;
+
     return Column(
       mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ClipRRect(
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(14),
           child: Image.asset(
             imagePath,
-            width: 100,
-            height: 100,
+            width: _width,
+            height: _height,
             fit: BoxFit.cover,
           ),
         ),
-        Text(title),
-        if (subtitle != null) Text(subtitle!),
+        SizedBox(
+          width: _width,
+          child: Text(
+            title,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: MekatoStyles.textTitleLabelM,
+          ),
+        ),
+        if (subtitle != null)
+          Text(
+            subtitle!,
+            style: MekatoStyles.textContentLabelM,
+            textAlign: TextAlign.start,
+          ),
       ],
     );
   }
