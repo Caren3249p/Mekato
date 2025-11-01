@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "392010255491",
+    "project_id": "mekato-53d0a",
+    "storage_bucket": "mekato-53d0a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392010255491:android:274da4fee7d547a4b15fb6",
+        "android_client_info": {
+          "package_name": "com.example.mekato"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCptXdolpslSpDqMnMmBeT4BmnVzTvY-uU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

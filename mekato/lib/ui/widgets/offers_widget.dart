@@ -63,7 +63,7 @@ class _OffersWidgetState extends State<OffersWidget> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(14),
                     child: Image.asset(
-                      "assets/images/publicidad.jpg",
+                      "../../../assets/images/publicidad.jpg",
                       fit: BoxFit.cover,
                     ),
                   ),

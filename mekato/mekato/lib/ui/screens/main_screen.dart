@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+import 'package:mekato/ui/core/mekato_colors.dart';
+import 'package:mekato/ui/screens/dashboard.dart';
+import 'package:mekato/ui/widgets/mekato_navbar.dart';
+
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
+
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
+  int _selectedIndex = 0;
+
+  void _onNavbarTap(int value) {
+    setState(() {
+      _selectedIndex = value;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: MekatoColors.main,
+        foregroundColor: Colors.white,
+        title: Text("Mekato"),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+        ],
+      ),
+      body: Dashboard(),
+      bottomNavigationBar: MekatoNavbar(
+        currentIndex: _selectedIndex,
+        onTap: _onNavbarTap,
+      ),
+    );
+  }
+}

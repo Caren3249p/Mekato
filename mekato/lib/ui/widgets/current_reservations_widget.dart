@@ -31,7 +31,7 @@ class CurrentReservationsWidget extends StatelessWidget {
                 return Row(
                   children: [
                     ItemCardM(
-                      imagePath: "assets/images/res.jpg",
+                      imagePath: "../../../assets/images/res.jpg",
                       title: "Miercoles 22 de octubre",
                       subtitle: "22/10/2025",
                     ),

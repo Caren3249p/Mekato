@@ -36,7 +36,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                 return Row(
                   children: [
                     ItemCardM(
-                      imagePath: "assets/images/hamb.jpg",
+                      imagePath: "../../../assets/images/hamb.jpg",
                       title: "Hamburguesa especial",
                     ),
                     SizedBox(

@@ -1,5 +1,5 @@
 name: mekato
-description: "A new Flutter project."
+description: "App de reservas de mesas - Mekato"
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # 🔥 Firebase
+  firebase_core: ^4.2.0
+  firebase_auth: ^6.1.1
+  firebase_ui_auth: ^3.0.1
+
+  # 🔐 Autenticaciones sociales
+  google_sign_in: ^7.2.0
+  flutter_facebook_auth: ^7.1.2
+
+  # 🎨 UI y animaciones
+  cupertino_icons: ^1.0.8
+  flutter_animate: ^4.5.0
 
 dev_dependencies:
   flutter_test:
@@ -20,5 +33,3 @@ flutter:
 
   assets:
     - assets/images/
-
-  # fonts:
