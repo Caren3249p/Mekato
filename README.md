@@ -1,2 +1,0 @@
-# Mekato
-Mobile development project
